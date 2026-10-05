@@ -8,9 +8,15 @@
         table,td,th { border: 2px solid black;
       border-collapse: collapse;
         }
+        th{
+            background-color: aqua;
+            color: black;
+        }
     </style>
 </head>
 <body>
+    <a href=""></a>
+    <a href="index.html">Ver las listas</a>
     <h1>Tablas</h1>
     <table>
     <tr>
@@ -19,30 +25,75 @@
             <th>Edad</th>
     </tr>
     <tr>
-            <th>mamadu</th>
-            <th>pepe</th>
+            <td>mamadu</td>
+            <td>pepe</td>
             <td>33</th>
     </tr>
     <tr>
-            <th>carlos</th>
-            <th>sahur</th>
+            <td>carlos</td>
+            <td>sahur</td>
             <td>23</th>
     </tr>
     </table>
-    <h1>caption y rowsapn</h1>
+    <h1>Caption y Rowsapn</h1>
     <table>
-        <caption>telefonos</caption>
+        <caption>Telefonos</caption>
         <tr>
             <th>Nombre</th>
-            <th colorspan="2">Telefono</th>
+            <th colspan="2">Telefono</th>
+            
         </tr>
         <tr>
             <td>Carlos perreira</td>
             <td>678382957</td>
             <td>748139013</td>
+            
         </tr>
+        <tr>
+            <td>CR</td>
+            <td>seven</td>
+            <td>623839192</td>
+        </tr>
+
     </table>
+    <table>
     <h1>rowspan</h1>
+    <tr>
+        <th>Nombre:</th>
+        <td>Jesus</td>
+        <tr>
+        <th rowspan="2">Telefono</th>
+        <td>463645646</td>
+        </tr>
+
+    
+    </tr>
+    </table>
+    <h1>Propiedadespor columnas</h1>
+    <table>
+        <caption>Listado de libros</caption>
+        <colgroup><col style="background-color: brown;">
+        </colgroup>
+         <colgroup><col style="background-color: rgb(98, 0, 255);">
+        </colgroup>
+         <colgroup><col style="background-color: rgb(255, 174, 0);">
+        </colgroup>
+        <tr>
+            <th>ISBN</th>
+            <th>Título</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>337</td>
+            <td>Empezando con HTML</td>
+            <td>3€</td>
+        </tr>
+        <tr>
+             <td>2323</td>
+             <td>Intro a CSS</td>
+             <td>99.99€</td>
+            </tr>
+    </table>
     
 </body>
 </html>
